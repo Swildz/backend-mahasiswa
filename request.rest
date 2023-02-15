@@ -1,0 +1,8 @@
+POST  http://localhost:3001/daftar
+Content-Type: application/json
+
+{
+    "username" : "siddiq",
+    "email"     : "ahmad.siddiq559@gmail.com",
+    "password"  : "232313"
+}
