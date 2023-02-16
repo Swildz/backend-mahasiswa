@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const RouterUser = require("./routes/user.route");
+const RouterMahasiswa = require("./routes/mahasiswa.route");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
@@ -18,6 +19,7 @@ mongoose
 app.use(cors());
 app.use(bodyParser.json());
 app.use("/", RouterUser);
+app.use("/dashboard", RouterMahasiswa);
 
 app.listen(process.env.PORT, (req, res) => {
   console.log(`listening on port ${process.env.PORT}`);

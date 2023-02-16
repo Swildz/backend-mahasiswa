@@ -27,3 +27,21 @@ exports.validationLogin = [
   check("username", "username tidak boleh kosong").notEmpty(),
   check("password", "password tidak boleh kosong").notEmpty(),
 ];
+
+exports.validatorInputData = [
+  check("name", "nama tidak boleh kosong").notEmpty(),
+  check("nohp", "nohp tidak boleh kosong").notEmpty(),
+  check("alamat", "alamat tidak boleh kosong").notEmpty(),
+  check("jurusan", "jurusan tidak boleh kosong").notEmpty(),
+  check("prestasi", "prestasi tidak boleh kosong").notEmpty(),
+  check("description", "description tidak boleh kosong").notEmpty(),
+]
+
+exports.validatorEditData = [
+  check("name", "nama tidak boleh kosong").notEmpty(),
+  check("nohp", "nohp tidak boleh kosong").notEmpty(),
+  check("alamat", "alamat tidak boleh kosong").notEmpty(),
+  check("jurusan", "jurusan tidak boleh kosong").notEmpty(),
+  check("prestasi", "prestasi tidak boleh kosong").notEmpty(),
+  check("description", "description tidak boleh kosong").notEmpty(),
+]

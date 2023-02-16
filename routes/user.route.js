@@ -12,7 +12,9 @@ const {
 } = require("../validator/index.validator");
 
 const middleware = require("../middleware/user.middleware");
-
+/**
+ * LOGIN API
+ */
 router.post("/daftar", validationDaftar, runValidation, DaftarUser);
 router.post("/login", validationLogin, runValidation, LoginUser);
 router.get("/user", middleware, GetSinggleUser);
